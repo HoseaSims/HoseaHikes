@@ -50,7 +50,7 @@ li{
     margin: 100px;
     margin-top: 100px;
     text-align: center;
-    background-color:rgba(0, 0, 0, .2);
+    background-color:rgba(0, 0, 0, .6);
     
 }
 
@@ -69,39 +69,63 @@ li{
     font-size: 2rem;
 }
 
-.card{
-    text-align: center;
-    margin-top: 8vh;
-    margin-left: 15px;
-    width: 400px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    
-}
-.hike-card{
-    
-    background-color:rgba(0, 0, 0, .2);
-}
-
-.card-img{
-    width: 400px;
-    margin: 0;
-    background-color: #103900;
-}
-
-.card-title{
-    padding-bottom: 10px;
-}
-
-.card p{
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-}
+/* Completed.HTML */
 
 .card-container{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+}
+
+.test-card{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 900px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color:rgba(0, 0, 0, .6);
     
+    box-shadow: 3px 3px 5px black;
+}
+
+.test-card h2{
+    position: relative;
+    top: -40px;
+    padding: 10px;
+    
+}
+
+.test-card p{
+    font-size: 20px;
+    padding: 15px;
+}
+
+.test-card img{
+    width: 400px;
+}
+
+@media (max-width: 375px){
+    
+    .nav{
+        font-size: 15px;
+    }
+    
+    .test-card{
+        width: 400px;
+    }
+
+    .test-card img{
+        width: 150px;
+    }
+
+    .test-card p{
+        font-size: 12px;
+    }
+
+    .test-card h2{
+        top: -10px;
+        font-size: 15px;
+    }
+
 }
